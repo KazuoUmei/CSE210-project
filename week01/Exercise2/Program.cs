@@ -8,30 +8,30 @@ class Program
         string response = Console.ReadLine();
         int percentage = int.Parse(response);
 
-        string letter = "";
+        string grade = "";
 
         if (percentage >= 90)
         {
-            letter = "A";
+            grade = "A";
         }
         else if (percentage >= 80)
         {
-            letter = "B";
+            grade = "B";
         }
         else if (percentage >= 70)
         {
-            letter = "C";
+            grade = "C";
         }
         else if (percentage >= 60)
         {
-            letter = "D";
+            grade = "D";
         }
         else
         {
-            letter = "F";
+            grade = "F";
         }
 
-        Console.WriteLine($"Your grade is: {letter}");
+        Console.WriteLine($"Your grade is: {grade}");
         
         if (percentage >= 70)
         {
@@ -39,7 +39,7 @@ class Program
         }
         else
         {
-            Console.WriteLine("See you again!");
+            Console.WriteLine("See you soon!");
         }    
     }
 }
